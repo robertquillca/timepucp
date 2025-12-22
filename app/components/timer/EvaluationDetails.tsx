@@ -31,7 +31,7 @@ type RowText = {
 type Row = RowCurso | RowFecha | RowText;
 
 /* ================== COMPONENTE ================== */
-export default function EvaluationDetails(): JSX.Element {
+export default function EvaluationDetails() {
   /* ---------- Fecha ---------- */
   const now = new Date();
 
