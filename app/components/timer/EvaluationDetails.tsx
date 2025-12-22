@@ -1,14 +1,14 @@
 "use client";
 
 import React from "react";
-import { Inter } from "next/font/google";
+import { Manrope } from "next/font/google";
 
 /* ================== FUENTES ================== */
 
-const inter = Inter({
+const manrope = Manrope({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-inter",
+  variable: "--font-manrope",
 });
 
 /* ================== TIPOS ================== */
@@ -87,9 +87,7 @@ export default function EvaluationDetails(): JSX.Element {
   ];
 
   return (
-    <div
-      className={`${inter.variable} w-full max-w-4xl mx-auto px-8 py-6 border-2 border-slate-200 bg-white rounded-4xl`}
-    >
+    <div className={`${manrope.className} font-manrope w-full max-w-4xl mx-auto px-8 py-6 border-2 border-slate-200 bg-white rounded-4xl`}>
       <table className="w-full text-[2.575rem]">
         <tbody>
           {rows.map((row, idx) => (
