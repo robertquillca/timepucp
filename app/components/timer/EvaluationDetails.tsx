@@ -87,13 +87,13 @@ export default function EvaluationDetails() {
   ];
 
   return (
-    <div className={`${manrope.className} font-manrope w-full max-w-4xl mx-auto px-8 py-6 border-2 border-slate-200 bg-white rounded-4xl`}>
-      <table className="w-full text-[2.575rem]">
+    <div className={` w-full max-w-4xl mx-auto px-8 py-6 border-2 border-slate-200 bg-white rounded-4xl`}>
+      <table className="w-full text-4xl">
         <tbody>
           {rows.map((row, idx) => (
-            <tr key={idx} className="align-top">
+            <tr key={idx} className="align-center h-16">
               {/* TITULO */}
-              <td className="pr-6 font-normal text-neutral-700 w-1/5">
+                <td className="pr-6 font-medium tracking-tight text-neutral-700 w-1/5">
                 {row.title}
               </td>
 
@@ -112,13 +112,13 @@ export default function EvaluationDetails() {
                     <input
                       type="text"
                       placeholder={row.value}
-                      className="w-3/4 bg-transparent focus:outline-none text-neutral-800 font-semibold placeholder:text-neutral-300"
+                      className="w-3/4 bg-transparent focus:outline-none text-neutral-800 font-bold tracking-tight placeholder:text-neutral-300"
                     />
                     <input
                       type="text"
                       placeholder={row.clave}
                       maxLength={6}
-                      className="w-1/4 bg-transparent focus:outline-none text-neutral-800 font-semibold uppercase placeholder:text-neutral-300"
+                      className="w-1/4 bg-transparent focus:outline-none text-neutral-800 tracking-tight font-semibold uppercase placeholder:text-neutral-300"
                     />
                   </div>
                 )}
@@ -128,7 +128,7 @@ export default function EvaluationDetails() {
                   <input
                     type="text"
                     placeholder={row.value}
-                    className="w-full bg-transparent focus:outline-none text-neutral-800 font-semibold placeholder:text-neutral-300"
+                    className="w-full bg-transparent focus:outline-none text-neutral-800 font-bold tracking-tight placeholder:text-neutral-300"
                   />
                 )}
               </td>
