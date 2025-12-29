@@ -74,7 +74,7 @@ export default function Timer() {
       <div className="flex min-h-screen items-center justify-center">
         <div className="flex flex-col items-center gap-4">
           {/* TÍTULO */}
-          <p className="text-5xl tracking-tight text-neutral" style={{  color: "var(--text)"}}>
+          <p className="text-[2.5rem] tracking-tight text-neutral" style={{  color: "var(--text)"}}>
             {mode === "regresivo"
               ? "La evaluación termina en"
               : "La hora actual es"}

@@ -88,7 +88,7 @@ export default function EvaluationDetails() {
 
   return (
     <div className={` w-full max-w-4xl mx-auto px-8 py-6 border-2 border-slate-200 bg-white rounded-4xl`}>
-      <table className="w-full text-4xl">
+      <table className="w-full text-[2.5rem]">
         <tbody>
           {rows.map((row, idx) => (
             <tr key={idx} className="align-center h-16">
