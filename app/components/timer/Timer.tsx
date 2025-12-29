@@ -49,10 +49,10 @@ export default function Timer() {
   function TimeBlock({ value, label }: { value: string; label: string }) {
     return (
       <div className="text-center">
-        <div className="text-[12rem] leading-none tracking-tight font-black tabular-nums" style={{ color: "var(--timer)" }}>
+        <div className="text-[12rem] leading-none tracking-tight font-black tabular-nums" style={{ fontFamily: "var(--font-spotifymix)", color: "var(--timer)" }}>
           {value}
         </div>
-        <div className="text-2xl text-neutral-400 leading-none">
+        <div className="text-2xl text-neutral-400 -mt-2 leading-none" style={{ color: "var(--timer)"}}>
           {label}
         </div>
       </div>
@@ -61,7 +61,7 @@ export default function Timer() {
 
   function Separator() {
     return (
-      <div className="text-[10rem] font-bold tracking-tight leading-none pb-10 select-none">
+      <div className="text-[10rem] font-bold tracking-tight leading-none pb-10 select-none" style={{ fontFamily: "var(--font-spotifymix)", color: "var(--timer)" }}>
         :
       </div>
     );
@@ -74,7 +74,7 @@ export default function Timer() {
       <div className="flex min-h-screen items-center justify-center">
         <div className="flex flex-col items-center gap-4">
           {/* TÍTULO */}
-          <p className="text-5xl tracking-tight text-neutral-900">
+          <p className="text-5xl tracking-tight text-neutral" style={{  color: "var(--text)"}}>
             {mode === "regresivo"
               ? "La evaluación termina en"
               : "La hora actual es"}
@@ -99,7 +99,7 @@ export default function Timer() {
           </div>
 
           {/* CARDS */}
-          <div className="w-full justify-evenly flex rounded-4xl border-2 mb-2 border-slate-200 overflow-hidden divide-x-2 divide-slate-200 bg-white">
+          <div className="w-full justify-evenly flex rounded-4xl border-2 mb-2 border-slate-200 overflow-hidden divide-x-2 divide-slate-200 bg-white" style={{ color: "var(--text)"}}>
             {/* HORA INICIO */}
             <div
               onClick={() => setModal("inicio")}

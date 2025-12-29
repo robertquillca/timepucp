@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { spotifymix } from "../app/fonts"
 import "./globals.css";
 import { ThemeProvider } from "./context/ThemeContext";
 
@@ -22,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} antialiased`}
+        className={`${inter.className} ${spotifymix.variable} antialiased`}
       >
         <ThemeProvider>{children}</ThemeProvider>
       </body>

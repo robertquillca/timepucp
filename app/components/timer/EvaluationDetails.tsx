@@ -118,7 +118,7 @@ export default function EvaluationDetails() {
                       type="text"
                       placeholder={row.clave}
                       maxLength={6}
-                      className="w-1/4 bg-transparent focus:outline-none text-neutral-800 tracking-tight font-semibold uppercase placeholder:text-neutral-300"
+                      className="w-1/4 text-end bg-transparent focus:outline-none text-neutral-800 tracking-tight font-semibold uppercase placeholder:text-neutral-300"
                     />
                   </div>
                 )}
